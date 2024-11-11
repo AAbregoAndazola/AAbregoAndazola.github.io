@@ -1,0 +1,38 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+  }
+  
+  .welcome-text h1 {
+    font-size: 3em;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .welcome-text p {
+    font-size: 1.5em;
+    animation: fadeIn 3s ease-in;
+  }
+  
+  .image-container {
+    flex: 1;
+  }
+  
+  .welcome-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
