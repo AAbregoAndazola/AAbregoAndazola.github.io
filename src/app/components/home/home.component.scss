@@ -1,38 +1,47 @@
 .home-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+
+.welcome-text {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.welcome-text h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+  animation: fadeIn 2s ease-in;
+}
+
+.welcome-text p {
+  font-size: 1.5em;
+  color: #555;
+  animation: fadeIn 3s ease-in;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .welcome-text h1 {
-    font-size: 3em;
-    font-weight: bold;
-    animation: fadeIn 2s ease-in;
+  to {
+    opacity: 1;
   }
-  
-  .welcome-text p {
-    font-size: 1.5em;
-    animation: fadeIn 3s ease-in;
-  }
-  
-  .image-container {
-    flex: 1;
-  }
-  
-  .welcome-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
+}
