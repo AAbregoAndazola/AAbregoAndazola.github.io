@@ -10,8 +10,63 @@ import { CommonModule } from '@angular/common';  // Importa CommonModule
 })
 export class PortafolioComponent {
   projects = [
-    { title: 'Programming Languages', description: 'Python, SQL, JavaScript, C#, Angular, LaTeX, Mathematica.', image: 'assets/project1.jpg' },
-    { title: 'Data Analysis and Machine Learning', description: 'Pandas, Numpy, Scikit-learn, TensorFlow.', image: 'assets/project2.jpg' },
-    { title: 'Tools', description: 'Power BI, Postman, Microsoft Office.', image: 'assets/project3.jpg' }
+    {
+      title: 'Programming Languages',
+      description: 'Expertise in Python, SQL, JavaScript, C#, Angular, LaTeX, and Mathematica. Developing robust and scalable solutions across multiple platforms.',
+      images: [
+        'assets/Screenshot 2024-11-12 140434.png',
+        'assets/Screenshot 2024-11-12 140500.png',
+        'assets/Screenshot 2024-11-12 140524.png',
+        'assets/Screenshot 2024-11-12 141019.png',
+        'assets/Screenshot 2024-11-12 141038.png',
+        'assets/Screenshot 2024-11-12 141113.png',
+        'assets/Screenshot 2024-11-12 141132.png'
+      ]
+    },
+    {
+      title: 'Data Analysis & ML',
+      description: 'Advanced data analysis and machine learning implementations using Pandas, Numpy, Scikit-learn, and TensorFlow frameworks.',
+      images: [
+        'assets/F3.png',
+        'assets/F4.png',
+        'assets/F5.png',
+        'assets/F11.png',
+        'assets/F12.png',
+        'assets/F13.png',
+        'assets/F21.png',
+        'assets/F31.png',
+        'assets/F32.png'
+      ]
+    },
+    {
+      title: 'Professional Tools',
+      description: 'Proficient in Power BI for data visualization, Postman for API testing, and Microsoft Office suite for business solutions.',
+      images: [
+        'assets/1.png',
+        'assets/2.png',
+        'assets/3.png',
+        'assets/drift.png',
+        'assets/asd.png',
+        'assets/esd.png',
+        'assets/fg.png',
+        'assets/gh.png',
+        'assets/po3.png'
+      ]
+    }
   ];
+  // Estado del modal
+  isModalOpen = false;
+  selectedImage: string | null = null;
+
+  // Abre el modal con la imagen seleccionada
+  openModal(image: string): void {
+    this.selectedImage = image;
+    this.isModalOpen = true;
+  }
+
+  // Cierra el modal
+  closeModal(): void {
+    this.isModalOpen = false;
+    this.selectedImage = null;
+  }
 }

@@ -1,11 +1,25 @@
 <div class="education-container">
-    <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item" *ngFor="let exp of educations">
-        <h3>{{ exp.title }}</h3>
-        <p>{{ exp.description }}</p>
-        <span>{{ exp.date }}</span>
+  <div class="education-header">
+    <h1>Education</h1>
+    <div class="header-line"></div>
+  </div>
+  
+  <div class="timeline">
+    <div class="timeline-item" *ngFor="let education of educations; let i = index">
+      <div class="timeline-content" [class.reverse]="i % 2 !== 0">
+        <div class="timeline-marker"></div>
+        <div class="timeline-card">
+          <div class="education-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+            </svg>
+          </div>
+          <h3>{{education.title}}</h3>
+          <h4>{{education.description}}</h4>
+          <span class="date">{{education.date}}</span>
+        </div>
       </div>
     </div>
   </div>
-  
+</div>
