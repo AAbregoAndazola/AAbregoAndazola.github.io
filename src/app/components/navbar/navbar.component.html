@@ -1,7 +1,28 @@
-<nav>
-    <a routerLink="/about">About Me</a>
-    <a routerLink="/portfolio">Portfolio</a>
-    <a routerLink="/experience">Experience</a>
-    <a routerLink="/education">Education</a>
-    <a routerLink="/contact">Contact Me</a>
-  </nav>
+<nav class="bg-gradient-to-r from-[#151815] to-[#42444c] py-4">
+  <div class="flex items-center justify-between container mx-auto">
+    <a routerLink="/about" class="flex items-center text-white hover:text-gray-300 transition-colors">
+      <lucide-camera [size]="24" class="mr-2"></lucide-camera>
+      About Me
+    </a>
+    <div class="flex items-center space-x-6">
+      <a routerLink="/portfolio" class="text-white hover:text-gray-300 transition-colors">
+        Portfolio
+      </a>
+      <a routerLink="/experience" class="text-white hover:text-gray-300 transition-colors">
+        Experience
+      </a>
+      <a routerLink="/education" class="text-white hover:text-gray-300 transition-colors">
+        Education
+      </a>
+      <a routerLink="/contact" class="text-white hover:text-gray-300 transition-colors">
+        Contact Me
+      </a>
+      <button class="text-white hover:text-gray-300 transition-colors">
+        <lucide-moon [size]="24"></lucide-moon>
+      </button>
+      <button class="text-white hover:text-gray-300 transition-colors">
+        <lucide-sun [size]="24"></lucide-sun>
+      </button>
+    </div>
+  </div>
+</nav>

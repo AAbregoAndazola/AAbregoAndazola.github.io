@@ -1,14 +1,20 @@
 nav {
-    background-color: #151815;
-    padding: 10px;
-    text-align: center;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-  }
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
+  background: linear-gradient(to right, #151815, #42444c);
+  padding: 1rem 0;
+}
+
+nav a {
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #c4c4c4;
+}
+
+nav button {
+  transition: color 0.3s ease;
+}
+
+nav button:hover {
+  color: #c4c4c4;
+}
