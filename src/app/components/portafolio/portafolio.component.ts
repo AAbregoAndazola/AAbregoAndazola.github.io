@@ -14,43 +14,43 @@ export class PortafolioComponent {
       title: 'Programming Languages',
       description: 'Expertise in Python, SQL, JavaScript, C#, Angular, LaTeX, and Mathematica. Developing robust and scalable solutions across multiple platforms.',
       images: [
-        'assets/Screenshot 2024-11-12 140434.png',
-        'assets/Screenshot 2024-11-12 140500.png',
-        'assets/Screenshot 2024-11-12 140524.png',
-        'assets/Screenshot 2024-11-12 141019.png',
-        'assets/Screenshot 2024-11-12 141038.png',
-        'assets/Screenshot 2024-11-12 141113.png',
-        'assets/Screenshot 2024-11-12 141132.png'
+        '/assets/Screenshot 2024-11-12 140434.png',
+        '/assets/Screenshot 2024-11-12 140500.png',
+        '/assets/Screenshot 2024-11-12 140524.png',
+        '/assets/Screenshot 2024-11-12 141019.png',
+        '/assets/Screenshot 2024-11-12 141038.png',
+        '/assets/Screenshot 2024-11-12 141113.png',
+        '/assets/Screenshot 2024-11-12 141132.png'
       ]
     },
     {
       title: 'Data Analysis & ML',
       description: 'Advanced data analysis and machine learning implementations using Pandas, Numpy, Scikit-learn, and TensorFlow frameworks.',
       images: [
-        'assets/F3.png',
-        'assets/F4.png',
-        'assets/F5.png',
-        'assets/F11.png',
-        'assets/F12.png',
-        'assets/F13.png',
-        'assets/F21.png',
-        'assets/F31.png',
-        'assets/F32.png'
+        '/assets/F3.png',
+        '/assets/F4.png',
+        '/assets/F5.png',
+        '/assets/F11.png',
+        '/assets/F12.png',
+        '/assets/F13.png',
+        '/assets/F21.png',
+        '/assets/F31.png',
+        '/assets/F32.png'
       ]
     },
     {
       title: 'Professional Tools',
       description: 'Proficient in Power BI for data visualization, Postman for API testing, and Microsoft Office suite for business solutions.',
       images: [
-        'assets/1.png',
-        'assets/2.png',
-        'assets/3.png',
-        'assets/drift.png',
-        'assets/asd.png',
-        'assets/esd.png',
-        'assets/fg.png',
-        'assets/gh.png',
-        'assets/po3.png'
+        '/assets/1.png',
+        '/assets/2.png',
+        '/assets/3.png',
+        '/assets/drift.png',
+        '/assets/asd.png',
+        '/assets/esd.png',
+        '/assets/fg.png',
+        '/assets/gh.png',
+        '/assets/po3.png'
       ]
     }
   ];
